@@ -9,6 +9,7 @@ const gameSchema = new mongoose.Schema(
     },
     platform: {
       type: [String],
+      enum: ["PS5", "Xbox", "PC", "Switch"],
       required: true,
     },
   },

@@ -42,6 +42,20 @@ const resolvers = {
       return await GameModel.findOne({ _id: parent.game_id });
     },
   },
+  Mutation: {
+    async addGame(_, args) {
+      return await GameModel.create({ ...args.game });
+    },
+    async updateGame(_, args) {
+      const update = await GameModel.updateOne(
+        { _id: args.id },
+        { ...args.edits },
+        { runValidators: true },
+      );
+
+      return await GameModel.findOne({ _id: args.id });
+    },
+  },
 };
 
 export default resolvers;

@@ -8,16 +8,19 @@ export default async function () {
       _id: "6547946b096476d9706f06a9",
       name: "use01",
       verified: true,
+      isActive: true,
     },
     {
       _id: "6547946b096476d9706f06ab",
       name: "use02",
       verified: true,
+      isActive: true,
     },
     {
       _id: "6547946b096476d9706f06aa",
       name: "use03",
       verified: true,
+      isActive: true,
     },
   ]);
 

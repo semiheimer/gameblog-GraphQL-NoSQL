@@ -11,6 +11,10 @@ const authorSchema = new mongoose.Schema(
       type: Boolean,
       required: true,
     },
+    isActive: {
+      type: Boolean,
+      default: true,
+    },
   },
   { collection: "authors", timestamps: true },
 );
